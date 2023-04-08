@@ -1,2 +1,2 @@
-## Java-Template
-Template containing Java Collections to code faster in contest.
+## Java-CP-Template
+Template containing Java Collections to code faster during CP contest.
