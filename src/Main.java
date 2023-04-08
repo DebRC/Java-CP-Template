@@ -1,44 +1,46 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.*;
 
 class InputMethods {
+    static BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+    static StringTokenizer st=new StringTokenizer("");
+
+    static String next() {
+        while (!st.hasMoreTokens())
+            try { 
+                    st=new StringTokenizer(br.readLine());				               
+                } 
+            catch (IOException e) {
+
+            }
+        return st.nextToken();
+    }
+
     // Method for Integer Input
     static int intInput() {
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        sc.close();
-        return a;
+        return Integer.parseInt(next());
     }
 
     // Method for Long Input
     static long longInput() {
-        Scanner sc = new Scanner(System.in);
-        long a = sc.nextLong();
-        sc.close();
-        return a;
+        return Long.parseLong(next());
     }
 
     // Method for Float Input
     static float floatInput() {
-        Scanner sc = new Scanner(System.in);
-        float a = sc.nextFloat();
-        sc.close();
-        return a;
+        return Float.parseFloat(next());
     }
 
     // Method for Double Input
     static double doubleInput() {
-        Scanner sc = new Scanner(System.in);
-        double a = sc.nextDouble();
-        sc.close();
-        return a;
+        return Double.parseDouble(next());
     }
 
     // Method for Word Input
     static String wordInput() {
-        Scanner sc = new Scanner(System.in);
-        String a = sc.next();
-        sc.close();
-        return a;
+        return next();
     }
 
     // Method for Sentence Input
@@ -48,14 +50,6 @@ class InputMethods {
         sc.close();
         return a;
     }
-
-    // Removes the extra line after Integer input
-    static void removeExtraLineAfterIntInput() {
-        Scanner sc = new Scanner(System.in);
-        sc.nextLine();
-        sc.close();
-    }
-
 }
 
 class StringMethods {
@@ -831,7 +825,6 @@ class CommonMethods {
 
 public class Main {
     public static void main(String[] args) {
-
     }
 
 }
