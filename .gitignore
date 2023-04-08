@@ -1,0 +1,12 @@
+.vscode/settings.json
+src/ArrayMethods.class
+bin
+src/CommonMethods.class
+src/InputMethods.class
+src/Main.class
+src/ListMethods.class
+src/DequeMethods.class
+src/QueueMethods.class
+src/MapMethods.class
+src/SetMethods.class
+src/StringMethods.class
